@@ -39,7 +39,7 @@ def save_data(df):
 """
 #  Data Penjualan
 
-**Berikut data penjualan toko helm Kartini**
+**Berikut data penjualan toko helm Kartini.**
 Halaman ini membaca dan menulis langsung dari/ke file dataset.
 """
 
@@ -62,9 +62,7 @@ edited_df = st.data_editor(
     disabled=[""],  # Jangan izinkan pengeditan kolom ''.
     num_rows="dynamic",  # Izinkan penambahan/penghapusan baris.
     column_config={
-        # Menampilkan simbol dollar sebelum kolom harga.
-        "price": st.column_config.NumberColumn(format="$%.2f"),
-        "cost_price": st.column_config.NumberColumn(format="$%.2f"),
+        #"Pendapatan": st.column_config.NumberColumn(format="Rp.%.2f"),
     },
     key="inventory_table",
 )
@@ -86,7 +84,7 @@ if st.button("Simpan perubahan"):
 #""
 #""
 
-# Menampilkan chart untuk best sellers
+#Menampilkan chart untuk best sellers
 #st.altair_chart(
 #    alt.Chart(df)
 #    .mark_bar(orient="horizontal")
