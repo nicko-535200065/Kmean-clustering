@@ -2,7 +2,7 @@ import streamlit as st
 import altair as alt
 import pandas as pd
 from pathlib import Path
-
+from sklearn.cluster import KMeans
 # Set the title and favicon that appear in the Browser's tab bar.
 st.set_page_config(
     page_title="Kmean Clustering",
@@ -75,6 +75,9 @@ if st.button("Simpan perubahan"):
 
 # ""
 # ""
+
+
+
 # ""
 
 # ----------------------------------------------------------------------------- #
